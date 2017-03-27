@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.xdysite.duanzi.ui.widget.MyViewPager
+        android:id="@+id/up_vp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+    </cn.xdysite.duanzi.ui.widget.MyViewPager>
+
+    <LinearLayout
+        android:id="@+id/down_ll"
+        android:background="@drawable/tb_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <cn.xdysite.duanzi.ui.view.NavBarIcon
+            android:id="@+id/nav_one"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            dy:icon="@drawable/ic_home_unselect"
+            android:layout_height="match_parent"
+            dy:color="@color/gray"
+            android:padding="13dp"
+            dy:text_size="12sp"
+            dy:text="@string/home_text"/>
+        <cn.xdysite.duanzi.ui.view.NavBarIcon
+            android:id="@+id/nav_two"
+            dy:icon="@drawable/ic_textjoke_unselect"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            dy:color="@color/gray"
+            android:padding="13dp"
+            dy:text_size="12sp"
+            dy:text="@string/joke_text"/>
+        <cn.xdysite.duanzi.ui.view.NavBarIcon
+            android:id="@+id/nav_three"
+            dy:icon="@drawable/ic_imagejoke_unselect"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            dy:color="@color/gray"
+            android:padding="13dp"
+            dy:text="@string/jokeimg_text"
+            dy:text_size="12sp"/>
+        <cn.xdysite.duanzi.ui.view.NavBarIcon
+            android:id="@+id/nav_four"
+            dy:icon="@drawable/ic_dt_unselect"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:padding="13dp"
+            dy:color="@color/gray"
+            dy:text="@string/social_text"
+            dy:text_size="12sp"/>
+        <cn.xdysite.duanzi.ui.view.NavBarIcon
+            android:id="@+id/nav_five"
+            dy:icon="@drawable/ic_my_unselect"
+            android:layout_width="0dp"
+            android:padding="13dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            dy:color="@color/gray"
+            dy:text="@string/person_text"
+            dy:text_size="12sp"/>
+    </LinearLayout>
+</LinearLayout>

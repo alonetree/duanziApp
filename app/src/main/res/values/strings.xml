@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Duanzi</string>
+    <string name="home_text">主页</string>
+    <string name="joke_text">段子</string>
+    <string name="jokeimg_text">趣图</string>
+    <string name="social_text">圈子</string>
+    <string name="person_text">个人</string>
+</resources>
